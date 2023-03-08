@@ -1,0 +1,79 @@
+.topo{
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+}
+
+.lista_posts_recentes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ p, a{
+    text-decoration: none !important;
+}
+
+.breadcrumbs_cat p a{
+    color: black;
+}
+
+.texto .titulo{
+    color: #3F4759;
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.autor_data em{
+    color: gray;
+    font-size: 15px;
+}
+
+.botao_vermais p{
+    background: #3F4759;
+    width: 100px;
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+.imagem{
+    width: 400px;
+    height: 300px;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto{
+    max-width: 400px;
+}
+
+
+@media (min-width: 1405px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 33%;
+    gap: 1rem !important
+    ;
+}
+}
+
+.posts_sidebar{
+    margin-top: 3rem;
+}
+
+.real_titulo{
+    color: #3F4759;
+    font-weight: 400;
+}
+
+.categoria{
+    display: flex;
+    gap: 5px;
+}

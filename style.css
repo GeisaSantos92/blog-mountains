@@ -1,0 +1,562 @@
+/*
+Theme Name: Blog Mountains
+Theme URI: http://blog-montains.com
+Author: Geisa
+Description: Tema criado para portfolio
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+
+.change-header{
+    background: #f2f2f2;
+}
+.btn{
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    background: #3F4759;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 0;
+}
+
+.btn:hover{
+    background: white;
+    color: #3F4759;
+
+}
+
+
+
+.tamanho-max{
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+}
+
+
+.navbar-brand{
+    flex: 3;
+}
+
+header{
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+    border: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.nav-link{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+/*Home*/
+
+
+#home::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+
+}
+
+#home{
+    background-image: url('./images/winter-ski-panorama-alps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+}
+
+
+.tamanho-max img{
+    margin-top: 3rem;
+}
+
+.home h1, .home em{
+    color: white;
+}
+
+.home h1{
+    font-size: 5rem;
+    font-weight: 400;
+    max-width: 900px;
+    text-align: center;
+}
+
+.home em{
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 600px;
+    text-align: center;
+}
+
+/*About*/
+
+
+#about{
+    width: 100%;
+    background: #cecccc;
+}
+
+.about{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.about-boxes{
+    display: flex;
+}
+
+.about h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.l-about p, .r-about p{
+    font-weight: 300;
+}
+.r-about{
+    margin-left: 2rem;
+}
+
+
+/*Leaders*/
+
+.leaders{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.leaders h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+
+#leaders {
+    background-image: url('./images/beautiful-shot-rocky-mountains-covered-with-white-snow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+}
+
+#leaders::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1; 
+}
+
+.leaders h1, .leaders p{
+    color: white;
+}
+
+
+/*Grid*/
+
+#grid {
+    background-image: url('./images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+  
+}
+
+#grid::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; 
+}
+
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.grid-1{
+    margin-right: 1rem;
+}
+
+.grid-1 img{
+    height: 400px !important;
+    width: 400px !important;
+    object-fit: cover;
+}
+
+.grid-1 h3{
+    font-weight: 300;
+    margin-top: 1rem;
+    color: white;
+}
+
+.grid-1 p{
+    font-weight: 300;
+    color: white;
+    max-width: 400px;
+}
+
+
+/*Team*/
+#team{
+    background-image: url('./images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+}
+
+#team::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1; 
+}
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-direction: column;
+}
+
+.img-team img{
+    width: 100%;
+}
+
+.img-team{
+    margin-right: 1rem;
+}
+
+.photos_team{
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.text-team{
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.text-team::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(263, 263, 263, 263);
+    opacity: .2;
+    z-index: -1; 
+    border-radius: 10px;
+}
+
+.text-team p{
+    color: white;
+    max-width: 1000px;
+    font-weight: 300;
+}
+
+.text-team h1{
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/*Contact*/
+
+#contact {
+    background-image: url('./images/fantastic-landscape-mountains-ukraine-vibrant-night-sky-with-stars-nebula-galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+}
+
+#contact::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; 
+}
+
+.contact h1, .contact p, .contact em    {
+    color: white;
+
+}
+
+
+
+
+#contact{
+    width: 100%;
+}
+
+.contact{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+
+.contact-boxes{
+    display: flex;
+}
+
+
+.contact-boxes .l-contact p {
+    max-width: 700px;
+    font-weight: 300;
+    margin-right: 2rem;
+}
+
+.contact-boxes .r-contact  form .form-control{
+    border-radius: 0;
+    width: 500px !important;
+}
+
+.contact-boxes .r-contact form .form-control:focus {
+    border-color: gray;
+    outline: none;
+    box-shadow: none;
+   
+}
+
+
+
+
+
+@media(max-width: 991px){
+    .contact-boxes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .r-contact{
+        margin-top: 3rem;
+    }
+
+    .contact-boxes .l-contact p {
+        margin-right: 0;
+    }
+}
+
+
+
+
+@media(max-width: 768px){
+
+    .about-boxes{
+        flex-direction: column;
+    }
+
+    .r-about{
+        margin-left: 0;
+    }
+
+    .img-team{
+        margin-right: 0;
+    }
+    
+}
+
+@media(max-width: 499px){
+.contact-boxes .r-contact form .form-control {
+    width: 400px !important;
+}
+}
+
+@media(max-width: 425px){
+    .home h1{
+        font-size: 4rem;
+      
+    }
+    
+    .home span{
+        font-size: 1rem;
+    }
+
+    .grid-1{
+        margin-right: 0;
+    }
+
+    .grid-1 img{
+        height: 300px !important;
+        width: 300px !important;
+    }
+    
+    .grid-1 p{
+        max-width: 300px;
+    }
+
+ 
+}
+
+@media(max-width: 375px){
+    .home h1{
+        font-size: 3rem;
+      
+    }
+    
+    .home span{
+        font-size: .8rem;
+    }
+
+    .contact-boxes .r-contact form .form-control {
+        width: 315px !important;
+    }
+}
+
+
+/*Footer*/
+
+
+.footer .row .col h3, .footer .row .col h4{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.footer .row .col p{
+    margin-bottom: 0;
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+}
+
+@media(max-width: 375px){
+    .footer .row{
+        flex-direction: column !important;
+        margin-bottom: 2rem !important;    
+}
+.footer .row .col{
+    margin-bottom: 2rem !important;    
+}
+}
+
+footer {
+    background-image: url('./images/sergei-a--heLWtuAN3c-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+}
+
+footer::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1; 
+}
+
+
+
